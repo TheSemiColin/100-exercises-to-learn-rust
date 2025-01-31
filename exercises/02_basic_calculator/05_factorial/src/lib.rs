@@ -9,7 +9,17 @@
 // `factorial(2)` to return `2`, and so on.
 //
 // Use only what you learned! No loops yet, so you'll have to use recursion!
+fn factorial(a: i32) -> i32 {
+    let number = if a == 0 {
+        1
+    } else if a == 1 {
+        1
+    } else {
+        a * factorial(a - 1)
+    };
 
+    number
+}
 #[cfg(test)]
 mod tests {
     use crate::factorial;

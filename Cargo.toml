@@ -6,6 +6,10 @@ members = [
   "helpers/mdbook-link-shortener",
   "helpers/ticket_fields",
 ]
+exclude = [
+  "exercises/*/.qodo"
+]
+
 resolver = "2"
 
 # This is needed to guarantee the expected behaviour on that specific exercise,
